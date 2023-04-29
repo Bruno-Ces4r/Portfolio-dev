@@ -1,0 +1,33 @@
+<header>
+  <nav class="navbar">
+    <img
+      (click)="goToHome()"
+      src="assets/logo.svg"
+      alt="Logo BC"
+      class="logo-bc"
+      draggable="false"
+    />
+    <div class="nav-items">
+      <ng-container *ngFor="let element of headerRoutes">
+        <a
+          class="link"
+          [routerLinkActive]="'active-route'"
+          [routerLink]="element.route"
+          [routerLinkActiveOptions]="{
+            exact: element.route === element.route
+          }"
+        >
+          <span>{{ element.name }}</span>
+        </a>
+      </ng-container>
+    </div>
+  </nav>
+</header>
+<mat-divider class="ui-divider"></mat-divider>
+
+<!-- 
+<a (click)="goToPresentation()">Apresentação</a>
+      <a (click)="goToExperience()">Experiência</a>
+      <a (click)="goToProjects()">Projetos</a>
+      <a (click)="goToSkills()">Habilidades</a>
+ -->

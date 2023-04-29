@@ -1,0 +1,42 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
+  background-color: #19191c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .logo-bc {
+    width: 120px;
+    height: 100%;
+    margin-left: 50px;
+    padding: 12px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  .nav-items {
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 60px;
+
+    .link {
+      text-decoration: none;
+      cursor: pointer;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 0px 25px;
+      line-height: 18px;
+      font-weight: 400;
+
+      &.active-route {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.mat-divider {
+  border-top-color: #8c8c8c;
+}

@@ -1,0 +1,59 @@
+.presentation-container {
+  display: flex;
+  justify-content: space-evenly;
+  font-style: inter;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+
+  .welcome-presentation {
+    font-size: 24px;
+
+    .personal-presentation {
+      max-width: 380px;
+      line-height: 40px;
+
+      .name {
+        font-size: 38px;
+        color: #f4f3bb;
+        font-weight: 700;
+      }
+
+      .developer {
+        font-size: 38px;
+        color: #ea7638;
+        font-weight: 700;
+      }
+    }
+
+    .personal-text {
+      padding-top: 10px;
+      font-size: 18px;
+      max-width: 450px;
+      text-align: justify;
+      line-height: 30px;
+    }
+
+    .contact {
+      margin-top: 30px;
+
+      a {
+        cursor: pointer;
+        margin-right: 15px;
+      }
+    }
+
+    .resume {
+      margin-top: 20px;
+    }
+  }
+
+  .avatoon {
+    max-width: 419px;
+    box-sizing: border-box;
+
+    .avatoon-image {
+      width: 100%;
+    }
+  }
+}
